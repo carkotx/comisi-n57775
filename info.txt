@@ -43,7 +43,9 @@ sencilla y legible y que luego es transformado a JavaScript
 
 CLASE 4 ------------------------------------------
 
-Props : son los parametros que se le pasan a un componente. Por default son de solo lectura y no se pueden modificar y viene predefinido como un objeto. 
+Props : son los parametros que se le pasan a un componente. 
+Por default son de solo lectura y no se pueden modificar y 
+viene predefinido y por defecto va recibir un objeto. 
 Estados de un componente : Queda pendiente y se ve la clase que viene
 imagenes
 css frameworks
@@ -54,6 +56,10 @@ https://tailwindcss.com/docs/guides/vite
 - Material UI : https://mui.com/
 - Ant Design : https://ant.design/
 - Ant Design : https://ant.design/
+- https://github.com/comisiones-coderhouse/comision_57775
+- https://vercel.com/ ---te da una url y te lo trae a local
+  para ver los componentes que voy creando:
+- https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
  AFTER 1 ------------------------------------------
 

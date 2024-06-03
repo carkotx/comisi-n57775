@@ -1,5 +1,6 @@
-import Header from "./Header.jsx"
-
+import Header from "./componentes/Header.jsx";
+import Main from "./componentes/Main.jsx";
+import Footer from "./componentes/Footer.jsx";
 /* App es un componente, es una funcion que va 
 a contener muchos elementos
 componentes:
@@ -38,17 +39,9 @@ function App (){
 return (
  <>
    <Header/>
-   <main>
-    <h2>Home</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Pariatur blanditiis praesentium quas, similique
-      voluptate dolorem nesciunt totam earum libero a hic
-      ad ratione illo. Illum accusantium iste placeat! 
-      Suscipit, quaerat.</p>
-   </main>
-   <footer>
-    <p>Copyright &copy; - Carlos Rangel </p>
-   </footer>
+   <Main/>
+   <Footer/>
+   
  </>)
 }
 //App(), return y etiquetas <> es un componente
