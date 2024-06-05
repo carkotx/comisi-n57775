@@ -1,4 +1,4 @@
-import NavBar from "./NavBar"
+import NavBar from "./componentes/NavBar.jsx"
 
 function Footer(){
     return (

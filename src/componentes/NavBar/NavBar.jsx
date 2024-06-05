@@ -1,12 +1,17 @@
+
+
 function NavBar(props) {
 
-  if (props.isHeader ==true){
+  //console.log(props)
+
+  if (props.isHeader == true){
     return (   
        <nav>
          <a href="#">home</a>
          <a href="#">productos</a>
          <a href="#">contactos</a>
        </nav>
+       
     )
  } else {
     return (
@@ -18,5 +23,6 @@ function NavBar(props) {
     )
   }
 }
+
 
 export default NavBar;
