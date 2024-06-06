@@ -1,10 +1,8 @@
-
-
 function NavBar(props) {
 
-  //console.log(props)
+  console.log(props)
 
-  if (props.isHeader == true){
+  if (props.isHeader){
     return (   
        <nav>
          <a href="#">home</a>

@@ -1,5 +1,5 @@
-import NavBar from "./componentes/NavBar/NavBar.jsx"
-import CartWidget from "./componentes/NavBar/CartWidget.jsx";
+import NavBar from "./NavBar/NavBar.jsx"
+import CartWidget from "./NavBar/CartWidget.jsx";
 function Header(){
     return (
      <header>

@@ -56,10 +56,14 @@ https://tailwindcss.com/docs/guides/vite
 - Material UI : https://mui.com/
 - Ant Design : https://ant.design/
 - Ant Design : https://ant.design/
+
 - https://github.com/comisiones-coderhouse/comision_57775
 - https://vercel.com/ ---te da una url y te lo trae a local
   para ver los componentes que voy creando:
 - https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+alt+control+n = creamos archivos mas rapido
+escribir (rfc) parado en al primera fila crea funsiones
 
  AFTER 1 ------------------------------------------
 
@@ -83,3 +87,64 @@ git clone
 git add
 git commit
 git push
+
+CLASE 5 ------------------------------------------
+
+Tailwind extensiones : 
+
+https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+https://marketplace.visualstudio.com/items?itemName=heybourn.headwind
+https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+
+
+Hooks : es una funcion que nos permite agregar funcionalidades a un componente. Siempre se ejecutan dentro de un componente y no se pueden ejecutar en un condicional o un loop.
+
+- useState : nos permite agregar estados a un componente
+- useEffect : nos permite agregar efectos secundarios a un componente
+- useRef
+- useContext
+
+Destructuring 
+CLASE 5 ------------------------------------------
+
+Tailwind extensiones : 
+
+https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+https://marketplace.visualstudio.com/items?itemName=heybourn.headwind
+https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+
+
+Hooks : es una funcion que nos permite agregar funcionalidades a un componente. Siempre se ejecutan dentro de un componente y no se pueden ejecutar en un condicional o un loop.
+
+- useState : nos permite agregar estados a un componente
+- useEffect : nos permite agregar efectos secundarios a un componente
+- useRef
+- useContext
+
+Destructuring 
+
+
+CLASE 6 ------------------------------------------
+
+Tipos de componentes : 
+
+- Estructurales 
+- Reutilizables
+
+- Contenedores -> Presentacionales
+
+Container Design Pattern : es un patron de diseño que nos permite separar la logica de negocio de la logica de presentacion.
+
+
+API
+
+API WEB - API REST
+
+
+https://github.com/public-apis/public-apis
+https://randomfox.ca/floof/
+
+
+https://fakestoreapi.com/docs 
+https://dummyjson.com/docs/products#products-all
+https://www.themealdb.com/api.php

@@ -15,24 +15,23 @@
 } 
 
 img{
- 
   max-width: 15%;
   height: auto;
-
 }
+
 /*
-.btn {
+.btn{
   display: inline-block;
-  padding: 0.5rem; 1rem;
+  padding  0.5rem; 1rem;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
-  text-decorration: none;
+  text-decorration: none; 
   white-space: nowrap;
   border-radius: 0.25rem;
   cursor: pointer;
   user-select: none;
   transition: background-color 0.2s, color 0.2s;
 }
-*/
+  */
