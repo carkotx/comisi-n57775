@@ -121,7 +121,85 @@ Hooks : es una funcion que nos permite agregar funcionalidades a un componente. 
 - useRef
 - useContext
 
-Destructuring 
+- Destructuring(ojo) hacer en cursos futuros//se escribe con js para cortar caminos
+
+ejemplo 1 componente boton-------------------------------------
+
+import { useState } from "react"
+function Button(props) {
+ 
+  // estados o llamadas a hooks
+  // una variable que se refresca, lo dificil es de donde se crea, tiene un valor
+  //esto lo vamos llevar a DESTRUCTURING
+
+/*
+const arrayDeValores = useState("valor inicial")
+const miEstado = arrayDeValores[0]//Esta es la variable reactiva o el estado
+const setMiEstado = arrayDeValores[1]//esta es la funcion que modifica el estado
+*/
+//DESTRUCTURING...lo que era en 3 lineas lo llevamos a 1 linea
+
+const [miEstado, setMiEstado] = useState("valor inicial")
+
+//console.log(arrayDeValores)  
+
+ /*const valores =useState()*/
+
+
+  //acciones 
+
+ const hacerClick=() => {
+console.log("click")
+//MiEstado = "nuevo valor"
+setMiEstado("nuevo valor")
+ }
+  
+  return (
+    <button className="btn" onClick={hacerClick}>
+      {miEstado}</button>
+  )
+}
+
+Ejemplo 2 componente boton-------------------------------------
+
+import { useState } from "react"
+
+function Button() {
+
+  // ESTADO
+ // STRUCTURING ARRANCANDO EN 0
+ // ojo el nombre de la funcion de los estados es el mismo nombre de los estados con SET adelante
+   
+ const [contador, setContador] = useState (0)
+
+  // ACCION
+   const hacerClick = () => {
+    console.log("Click")
+    // NO se puede hacer como JS manila
+    //contador++ como se hacia en manila js
+    //contador= contador + 1
+    //contador += 1
+    //console.log(contador)
+    //setContador(contador++)
+    setContador(contador + 1)
+   }
+
+  //VISTA
+
+  // le colocamos al <button un evento onClick={?}
+  // y como es un EVENTO tiene que realizar una ACCION
+  //NOS HACEMOS UN NUEVO ESTADO CONTADOR
+  //le coloco el estilo del boton con talwind className...
+
+  return (
+    <div>
+      <button onClick={hacerClick} className="btn">click</button> 
+      <p>contador : {contador}</p>
+    </div>
+  )
+}
+
+export default Button
 
 
 CLASE 6 ------------------------------------------
@@ -131,20 +209,135 @@ Tipos de componentes :
 - Estructurales 
 - Reutilizables
 
-- Contenedores -> Presentacionales
+- Contenedores : es el que va hacer el pedido a  la api de MLibre, que hago,
+el que los va guardar lo que recibe, va tener mayoritariamente cuestiones de 
+logica,useState, useEffect, metodos, acciones, condicionales, bucles...y lo 
+que se ve en el retorno es otro componente y se el componente REPRESENTACIONAL -->
 
-Container Design Pattern : es un patron de diseño que nos permite separar la logica de negocio de la logica de presentacion.
+uno va dentro del otro:  CONTENEDOR-->PRESENTACIONAL
+
+_ Presentacionales : recibe props de su componente padre y la va mostrar
 
 
-API
+Container Design Pattern : es un patron de diseño que nos permite separar 
+la logica de negocio de la logica de presentacion.
 
-API WEB - API REST
 
+-API WEB : es un programa que alguien lo crea, que sirve para traducir informacion
+emplo el entorno, api del DOM, la api de eventos, la api de fech...herramientas 
+que estan, estas nos permiten hablar entre difeerentes tipos de lenguajes la api
+es el traductor
+
+-API REST : ES UN PROGRAMA QUE TIENE INFORMACION QUE ES REQUERIDA Y ESTA MISMA 
+NOS DA UN ACCESO CON  UNA URL A LA CUAL PUEDO LLEGAR CON REST.
+
+- EXITEN LAS API WEB Y API REST
+
+ejemplos de APIS :
 
 https://github.com/public-apis/public-apis
 https://randomfox.ca/floof/
 
 
-https://fakestoreapi.com/docs 
+https://fakestoreapi.com/docs : no funcion
 https://dummyjson.com/docs/products#products-all
 https://www.themealdb.com/api.php
+
+
+CLASE 7 ------------------------------------------
+
+MVC : Modelo, Vista, Controlador 
+
+Reejecucion de un componente : 
+
+1) Cada vez que un estado cambia
+2) Cada vez que cambian los props
+3) Cada vez que un componente padre se re-renderiza
+
+
+const nombres = ['Juan', 'Pedro', 'Maria'];
+
+const r = nombres.forEach((item,index)=>{
+
+})
+
+const r = nombres.map((item,index)=>{
+  return "horacio" + index
+})
+//[horacio0,horacio1,horacio2]
+
+
+nombres.filter((item,index)=>{})
+nombres.find((item,index)=>{})
+nombres.reduce(()=>{})
+nombres.sort(()=>{})
+
+
+AFTER 2 ------------------------------------------
+
+https://tailblocks.cc/
+https://mambaui.com/components/profile
+https://marketplace.visualstudio.com/items?itemName=alfredbirk.tailwind-documentation
+https://magicui.design/docs/components/dot-pattern
+https://ui.aceternity.com/
+https://ui.shadcn.com/
+https://javascript.info/fetch-api
+
+Fetch => Api WEB
+fetch() => Function
+
+Promise => Api WEB
+promise => Object
+
+HTTP => HyperText Transfer Protocol
+
+
+Request(Cliente)
+
+URL/IP - METODO(GET/POST/PUT/DELETE)
+HEADERS - BODY
+
+
+Response(Servidor)
+
+CODIGO - MENSAJE
+
+1xx - Información
+2xx - Aceptado
+3xx - Redireccionado
+4xx - Error de cliente
+    401 - Unauthorized
+    403 - Forbidden
+    404 - Not Found
+    405 - Method Not Allowed
+
+5xx - Error de servidor
+    500 - Internal Server Error
+    502 - Bad Gateway
+    503 - Service Unavailable
+    504 - Gateway Timeout
+
+    HEADERS - BODY
+
+
+fetch("https://dummyjson.com/products")
+.then((res)=>{
+
+  res.status//200
+  res.ok //true
+  res.headers //{...}
+  res.body
+  
+  res.text()
+  res.formData()
+  res.arrayBuffer()
+  res.blob()
+
+  return res.json()
+})
+.then((res)=>{
+  console.log(res)
+})
+.catch((err)=>{
+  
+})

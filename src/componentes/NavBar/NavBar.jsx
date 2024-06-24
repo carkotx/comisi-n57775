@@ -4,7 +4,7 @@ function NavBar(props) {
 
   if (props.isHeader){
     return (   
-       <nav>
+       <nav className="flex gap-4">
          <a href="#">home</a>
          <a href="#">productos</a>
          <a href="#">contactos</a>
@@ -13,7 +13,7 @@ function NavBar(props) {
     )
  } else {
     return (
-       <nav>
+       <nav className="flex justify-center gap-4 text-xs">
          <a href="#">terminos y condiciones</a>
          <a href="#">F.A.Q</a>
          <a href="#">contactos</a>

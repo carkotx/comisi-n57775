@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
  :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -13,6 +16,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } 
+
+.btn{ 
+  @apply inline-block px-4 py-2 font-semibold text-white bg-blue-600 rounded cursor-pointer text-center
+  transition duration-200 ease-in-out 
+
+}
 
 img{
   max-width: 15%;
