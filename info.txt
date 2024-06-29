@@ -257,6 +257,14 @@ Reejecucion de un componente :
 
 const nombres = ['Juan', 'Pedro', 'Maria'];
 
+- las funciones llevan un array y  un colback (=>{}) , llevan un sola funcion y recibe 2 parametros ejemplo item,index
+nombres.forEach((item,index)=>{}) = no tiene retorno 
+nombres.map(()=>{}) retorna array de la misma cantidad de longitud de donde salgo
+nombres.filter(()=>{}) retorns array
+nombres.find(()=>{})
+nombres.reduce(()=>{})
+nombres.sort(()=>{})
+
 const r = nombres.forEach((item,index)=>{
 
 })

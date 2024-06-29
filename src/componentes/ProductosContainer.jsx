@@ -28,7 +28,7 @@ function ProductosContainer() {
     })
      .then((data) => {
      /* console.log(data.products)*/
-      setProductos(data.Products)
+      setProductos(data.products)
 
       //setEstado(data.products)
       //set cargando(false)
